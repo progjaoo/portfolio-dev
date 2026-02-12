@@ -10,10 +10,10 @@ const Footer = () => (
         <a href="https://github.com/progjaoo" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
           <Github size={18} />
         </a>
-        <a href="https://www.linkedin.com/in/jo%C3%A3o-marcos-valente-62a0b81b8/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+        <a href="https://www.linkedin.com/in/joao-marcos-valente/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
           <Linkedin size={18} />
         </a>
-        <a href="https://www.instagram.com/joaomarcos_valente/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+        <a href="https://www.instagram.com/valente.joaomarcos/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
           <Instagram size={18} />
         </a>
       </div>

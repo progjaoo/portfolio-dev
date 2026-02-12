@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Send, Mail, User, MessageSquare } from "lucide-react";
+import { Send, Mail, User, MessageSquare, Phone } from "lucide-react";
 
 const ContactSection = () => {
   const ref = useRef(null);
@@ -18,7 +18,7 @@ const ContactSection = () => {
     const body = encodeURIComponent(
       `Nome: ${formData.name}\nEmail: ${formData.email}\n\nMensagem:\n${formData.message}`
     );
-    window.open(`mailto:joaomarcos.valente@hotmail.com?subject=${subject}&body=${body}`);
+    window.open(`mailto:joaomvprog@gmail.com?subject=${subject}&body=${body}`);
 
     setSending(false);
     setSent(true);
@@ -89,14 +89,25 @@ const ContactSection = () => {
             />
           </div>
 
-          <button
-            type="submit"
-            disabled={sending}
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity disabled:opacity-50"
-          >
-            <Send size={16} />
-            {sent ? "Mensagem enviada!" : sending ? "Enviando..." : "Enviar mensagem"}
-          </button>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <button
+              type="submit"
+              disabled={sending}
+              className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity disabled:opacity-50"
+            >
+              <Send size={16} />
+              {sent ? "Mensagem enviada!" : sending ? "Enviando..." : "Enviar mensagem"}
+            </button>
+            <a
+              href="https://wa.me/5524981894825?text=Ol%C3%A1%20Jo%C3%A3o%2C%20vim%20pelo%20seu%20portf%C3%B3lio!"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-[hsl(142,70%,40%)] text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
+            >
+              <Phone size={16} />
+              Contato via WhatsApp
+            </a>
+          </div>
         </motion.form>
       </div>
     </section>
