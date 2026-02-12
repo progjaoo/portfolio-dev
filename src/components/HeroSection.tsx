@@ -4,8 +4,8 @@ import profilePhoto from "@/assets/profile-photo.png";
 
 const socials = [
   { icon: Github, href: "https://github.com/progjaoo", label: "GitHub" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/jo%C3%A3o-marcos-valente-62a0b81b8/", label: "LinkedIn" },
-  { icon: Instagram, href: "https://www.instagram.com/joaomarcos_valente/", label: "Instagram" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/joao-marcos-valente/", label: "LinkedIn" },
+  { icon: Instagram, href: "https://www.instagram.com/valente.joaomarcos/", label: "Instagram" },
 ];
 
 const HeroSection = () => {
