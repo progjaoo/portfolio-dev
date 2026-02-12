@@ -66,7 +66,7 @@ const HeroSection = () => {
               <img
                 src={profilePhoto}
                 alt="João Marcos Valente"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
             <div className="absolute -bottom-4 -right-4 bg-card border border-border rounded-lg px-4 py-2 font-mono text-sm text-primary">
